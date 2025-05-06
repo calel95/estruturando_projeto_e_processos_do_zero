@@ -22,6 +22,6 @@
 
 4. Instalar as libs necessárias:
     ```bash
-    poetry add requirements.txt
+    poetry add pyproject.toml
     ```
 
