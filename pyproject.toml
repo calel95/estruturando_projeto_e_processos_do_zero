@@ -10,8 +10,14 @@ python = "^3.12"
 streamlit = "^1.45.0"
 pydantic = {extras = ["email"], version = "^2.11.4"}
 pytest = "^8.3.5"
+selenium = "^4.32.0"
+taskipy = "^1.14.1"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.taskipy.tasks]
+run = "lsof -ti :8501 | xargs kill -9 | streamlit run src/app.py"
+test = "lsof -ti :8501 | xargs kill -9 | pytest tests -v"
