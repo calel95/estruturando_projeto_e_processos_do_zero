@@ -1,6 +1,6 @@
 {
-    "better-comments.highlightPlainText": false,
-    "better-comments.multilineComments": true,
+    "better-comments.highlightPlainText": true,
+ //   "better-comments.multilineComments": false,
     "better-comments.tags": [
   {
     "tag": "!",

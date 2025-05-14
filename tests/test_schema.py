@@ -6,7 +6,7 @@ from pydantic import ValidationError
 
 def test_vendas_dados_validos():
     from datetime import datetime
-    
+
 
     # Criando um exemplo de dados válidos para o teste    
     dados_validos = {

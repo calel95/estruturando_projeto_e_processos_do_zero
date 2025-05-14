@@ -28,3 +28,9 @@ class ExcelValidadorUI:
             "Suba o arquivo Excel",
             type=["xlsx", "xls"]
         )
+    
+    def display_results(self, result, error):
+        if error:
+            st.error(f"Erro na validação: {error}")
+        else:
+            st.success("O schema do arquivo Excel está correto!")
