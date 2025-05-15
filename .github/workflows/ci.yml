@@ -1,0 +1,16 @@
+name: ci
+
+on: pull_request
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: primeira CI
+        run: echo "Hello, world!"
+
+      - name: fazendo um ls
+        run: echo $(ls)
+
+      - name: fazendo um pwd
+        run: echo $(pwd)
