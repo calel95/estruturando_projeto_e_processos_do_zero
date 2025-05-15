@@ -23,5 +23,11 @@ jobs:
       - name: Instalando dependências
         run: poetry update package
 
+      - name: verificando o diretorio atual
+        run: pwd
+        
+      - name: listando os arquivos
+        run: ls -la
+
       - name: Rodando os testes
         run: pytest tests/test_schema.py
