@@ -21,11 +21,11 @@ jobs:
         run: pip install poetry
 
       - name: Instalando dependências
-        run: poetry update package
+        run: poetry install
 
       - name: verificando o diretorio atual
         run: pwd
-        
+
       - name: listando os arquivos
         run: ls -la
 
