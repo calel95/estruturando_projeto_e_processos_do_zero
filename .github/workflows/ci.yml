@@ -30,4 +30,4 @@ jobs:
         run: ls -la
 
       - name: Rodando os testes
-        run: pytest tests/test_schema.py
+        run: pytest /tests/test_schema.py
