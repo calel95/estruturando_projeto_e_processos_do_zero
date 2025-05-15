@@ -21,7 +21,7 @@ jobs:
         run: pip install poetry
 
       - name: Instalando dependências
-        run: poetry add pyproject.toml
+        run: poetry update package
 
       - name: Rodando os testes
         run: pytest tests/test_schema.py
