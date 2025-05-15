@@ -17,5 +17,11 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: fazendo um pwd
-        run: echo $(pwd)
+      - name: Instalando poetry
+        run: pip install poetry
+
+      - name: Instalando dependências
+        run: poetry install pyproject.toml
+
+      - name: Rodando os testes
+        run: pytest tests/test_schema.py
