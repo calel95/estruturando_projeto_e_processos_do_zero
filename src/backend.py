@@ -26,4 +26,6 @@ def process_excel(uploaded_file):
         return False, str(ve)
     except Exception as e:
         return False, f"Erro inesperado: {str(e)}"
+    
+def excel_to_sql(df):
 
