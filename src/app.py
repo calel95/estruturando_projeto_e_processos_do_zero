@@ -1,5 +1,6 @@
 from frontend import ExcelValidadorUI
 from backend import process_excel, excel_to_sql
+from logging import error, info
 
 def main():
     # Initialize the UI
@@ -23,6 +24,7 @@ def main():
         elif ui.display_save_message():
             excel_to_sql(df)
             ui.display_success_message()
+            info("File uploaded and saved to the database successfully.")
 
 if __name__ == "__main__":
     main()
