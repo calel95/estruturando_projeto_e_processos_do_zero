@@ -18,7 +18,6 @@ POSTGRES_URL = f"postgresql://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_HOST
 
 #POSTGRES_URL = f"postgresql+psycopg2://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}"
 
-#POSTGRES_URL = "postgresql+psycopg2://dbname_pmm7_user:M0XEO8YJXzrFD7M7Wiqq3beTF9Keh2iJ@dpg-d0j9lb63jp1c739mfnfg-a.oregon-postgres.render.com:5432/dbname_pmm7"
 #engine = create_engine(POSTGRES_URL)
 
 
