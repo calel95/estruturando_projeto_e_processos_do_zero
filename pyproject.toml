@@ -21,6 +21,7 @@ sqlalchemy = "^2.0.41"
 psycopg2 = "^2.9.10"
 psycopg2-binary = "^2.9.10"
 python-dotenv = "^1.1.0"
+sentry-sdk = "^2.29.1"
 
 
 [build-system]
